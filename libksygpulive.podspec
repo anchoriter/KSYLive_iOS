@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
     :tag => 'v'+s.version.to_s
   }
   s.requires_arc = true
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC -all_load' }
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC -all_load -ld64' }
 
   # Exclude optional Search and Testing modules
   s.default_subspec = 'libksygpulive'
